@@ -1,0 +1,221 @@
+.contact-form{
+    // margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    
+    .text-box{
+        
+        // height: 450px;
+        margin: 0 2rem;
+        padding: 3rem 0;
+
+        h2{
+            text-align: center;
+            // padding-top: 30px;
+            font-family: $dm-serif;
+            border-bottom: 2px solid $blue-green;
+            margin: 0;
+        }
+
+        p{
+            font-family: $montserrat;
+        }
+        .hours{
+            // padding: 20px;
+
+            .business{
+                font-size: 18px;
+                font-family: $dm-serif;
+                margin: 20px 0px 0px;
+            }
+            .email{
+                font-size: 18px;
+                margin-top: 40px;
+                font-family: $dm-serif;
+                margin: 20px 0px 0px;
+            }
+            .time{
+                
+               text-align: center; 
+               font-size: 0.9rem;
+
+            }
+
+        }
+       
+    }
+    .form-box{
+        
+        // height: 500px;
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 25px;
+
+        .wpcf7-submit {
+            display: flex;
+            color: white;
+            // margin-left: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: $dark-blue;
+            border-radius: 20px;
+            padding: 0.4em 0.6em;
+            font-size: 20px;
+            border: 1px solid #fff;
+            width: fit-content;
+
+            &:hover {
+                background-color: $white;
+                color: $dark-blue;
+            }
+            
+        }
+
+        label{
+            color: white;
+            font-family: $dm-serif;
+        }
+
+        input{
+            background: transparent;
+            font-family: $dm-serif;
+            width: 100%;
+            
+         }
+    
+         input[type='text'], [type='email'], textarea {
+            background: transparent !important;
+            border: none;
+            border-bottom: solid 2px #fff;
+            font-family: $dm-serif;
+            color: $white;
+        }
+
+        textarea {
+            height: 100px;
+        }
+        
+        
+     }
+
+    select {
+        background: none;
+        border: none;
+        border-bottom: solid 2px #fff;
+        font-family: $dm-serif;
+        width: 100%;
+    }
+    .wpcf7-select{
+        // color: #F39C12;
+        color: $yellow-green;
+    }
+    .wpcf7-select:hover{
+        // color: #F39C12;
+        color: $yellow-green;
+        background-color: $dark-blue;
+    }
+
+    .wpcf7-email, .wpcf7-text, .wpcf7-textarea {
+        background: transparent;
+        border: none;
+        border-bottom: solid 2px #fff;
+    }
+
+    .wpcf7-form {
+    
+    //    margin-left: 20px;
+       padding-top: 40px;
+       font-size: 18px;
+    }
+
+    .wpcf7-not-valid-tip {
+        color: #fcb900;
+    }
+
+    .wpcf7-response-output {
+        // color: $yellow-green;
+        color: #fcb900;
+        border: 2px solid $white !important;
+        // font-family: $montserrat;
+        font-weight: 600;
+    }
+
+    
+    
+}
+
+@media screen  and (min-width: 768px) {
+    .contact-form{
+        display: flex;
+        flex-direction: row;
+        
+        .text-box{
+            
+            height: 450px;
+            width: 50%;
+            margin: 3em 5em;
+            //padding: 5em 0;
+            
+            h2{
+                
+                //padding-top: 2rem;
+                text-align: center;
+                // margin-left: 30px;
+                font-size: 2.25em;
+                
+            }
+            .hours{
+    
+                .business{
+                    font-size: 1.5em;
+                    font-weight: 600;
+                }
+                .email{
+                    font-size: 1.5em;
+                    margin-top: 40px;
+                    font-weight: 600;
+                }
+                .time{
+                    font-size: 1.3em;
+                    margin: 1em 0 0 3em;
+                    text-align: left;
+                    font-weight: 500;
+                    
+                }
+    
+            }
+           
+        }
+        .form-box{
+            
+            width: 50%;
+
+            label{
+                color: white;
+                
+            }
+
+            .wpcf7-form {
+                padding: 40px 20px;
+                // padding-top: 40px;
+                font-size: 18px;
+             }
+
+             
+            
+            
+            .submit{
+                
+                margin-left: 100px;
+                width: 150px;
+                font-family: $dm-serif;
+            }
+        }
+        
+    }
+    
+    
+}
+

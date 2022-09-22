@@ -1,0 +1,48 @@
+footer{
+    width: 100%;
+    height: auto;
+    background-color: $dark-blue;
+    // margin: 30px 0;
+    padding: 10px 0;
+}
+.footerBox{
+    font-family: $dm-serif;
+    margin: 20px ;
+    text-align: center;
+    color: $white;
+    /* border: 1px solid #000; */
+}
+.footerBox ul{
+    list-style-type: none;
+    margin-top: 60px;
+}
+.footerBox a{
+    text-decoration: none;
+    color: $white;
+}
+
+.footerBox p{
+    margin: 16px 0px 0px;
+    font-size: 1.05em;
+}
+.footerBox p:nth-of-type(2) {
+    margin: 0;
+}
+.socialMedia a img{
+ border-radius: 50%; 
+ margin: 5px;
+ scale: 0.6;
+}
+
+.icon-attribution {
+    margin: 50px 0 0 0;
+    p {
+        margin: 0;
+        font-size: 1em;
+        color:gray;
+    }
+    img {
+        height: 60px;
+    }
+}
+/* This is the end of footer  */
